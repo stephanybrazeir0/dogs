@@ -7,9 +7,9 @@ import { defineConfig } from "eslint/config";
 
 export default defineConfig([
   js.configs.recommended,
-  react.configs.recommended,
-  react.configs["jsx-runtime"],
-  reactHooks.configs.recommended,
+  react.configs.flat.recommended,
+  react.configs.flat["jsx-runtime"],
+  reactHooks.configs.flat.recommended,
   {
     files: ["**/*.{js,jsx}"],
     languageOptions: {
@@ -23,8 +23,6 @@ export default defineConfig([
       },
     },
     plugins: {
-      react,
-      "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
     },
     settings: {
