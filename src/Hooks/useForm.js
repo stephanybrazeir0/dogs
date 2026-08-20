@@ -28,8 +28,6 @@ const useForm = (type) => {
 
   function onChange({ target }) {
     if (error) {
-      console.log("error", error);
-      console.log(validate(target.value));
       validate(target.value);
     }
 
